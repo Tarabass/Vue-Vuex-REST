@@ -1,0 +1,66 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "todos": [
+    {
+      "title": "dsfsdf",
+      "completed": true,
+      "id": "0329096243"
+    },
+    {
+      "title": "dsfdsf",
+      "completed": true,
+      "id": "7264792456"
+    },
+    {
+      "title": "ewrwer",
+      "completed": false,
+      "id": "3289321538"
+    },
+    {
+      "title": "werewr",
+      "completed": true,
+      "id": "8628983726"
+    },
+    {
+      "title": "ewrwer",
+      "completed": true,
+      "id": "0528890004"
+    },
+    {
+      "title": "sdfsf",
+      "completed": true,
+      "id": "4835438091"
+    },
+    {
+      "title": "sdfsdf",
+      "completed": true,
+      "id": "5224336769"
+    },
+    {
+      "title": "sfsdf",
+      "completed": true,
+      "id": "0798073905"
+    },
+    {
+      "title": "sdf",
+      "completed": false,
+      "id": "2018166344"
+    }
+  ]
+}
