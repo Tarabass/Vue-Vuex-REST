@@ -1,11 +1,12 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
+import Vuex, { createLogger } from 'vuex'
 import actions from '@/store/actions'
 import getters from '@/store/getters'
 import mutations from '@/store/mutations'
 import state from '@/store/state'
 
 Vue.use(Vuex)
+const debug = process.env.NODE_ENV !== 'production'
 
 // const socket = new WebSocket('wss://localhost:3000')
 
@@ -50,6 +51,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   // plugins: [plugin],
+  plugins: debug ? [createLogger()] : [],
   state,
   getters,
   mutations,
