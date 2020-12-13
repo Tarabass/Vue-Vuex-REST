@@ -5,7 +5,7 @@
     <li class="todo-item" v-for="todo in todos" :key="todo.id">
       <input class="todo-item-completed" type="checkbox" :checked="todo.completed" @change="changeTodoCompleted({ todo, checked: !todo.completed })">
       <span>{{ todo.title }}</span>
-      <span class="todo-item-remove" @click="removeTodo(todo)">X</span>
+      <span class="todo-item-remove" @click="removeTodo(todo)">❌</span>
     </li>
   </ul>
 </template>
