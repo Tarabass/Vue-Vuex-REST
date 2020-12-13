@@ -1,8 +1,8 @@
 <template>
-  <form @submit="addTodo">
+  <form @submit="addTodo" @reset="clearNewTodo">
     <input type="text" v-model.lazy="newTodoItem">
     <button type="submit">Toevoegen</button>
-    <button type="reset" @click="clearNewTodo">Cancel</button>
+    <button type="reset">Cancel</button>
   </form>
 </template>
 
