@@ -1,5 +1,3 @@
 export default {
-  loading: true,
-  todos: [],
-  newTodo: ''
+  endPoint: 'http://localhost:3000'
 }

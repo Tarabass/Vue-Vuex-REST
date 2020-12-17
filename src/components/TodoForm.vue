@@ -12,7 +12,7 @@ import { mapGetters, mapActions } from 'vuex'
 export default {
   name: 'TodoForm',
   computed: {
-    ...mapGetters([
+    ...mapGetters('todos', [
       'newTodo'
     ]),
     newTodoItem: {
@@ -25,7 +25,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions([
+    ...mapActions('todos', [
       'addTodo',
       'clearNewTodo',
       'setNewTodo'

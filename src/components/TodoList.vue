@@ -16,13 +16,13 @@ import { mapGetters, mapActions } from 'vuex'
 export default {
   name: 'TodoList',
   computed: {
-    ...mapGetters([
+    ...mapGetters('todos', [
       'loading',
       'todos'
     ])
   },
   methods: {
-    ...mapActions([
+    ...mapActions('todos', [
       'changeTodoCompleted',
       'loadTodos',
       'removeTodo'
